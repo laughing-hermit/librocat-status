@@ -16,7 +16,7 @@ status-website:
   logoUrl: https://librocat.com/logo.svg
   name: librocat status
   introTitle: "**librocat Cloud** status"
-  introMessage: Checked every five minutes by GitHub Actions. Incidents are the open issues on this repository.
+  introMessage: Checked by GitHub Actions, usually every few hours. Incidents are the open issues on this repository.
   navbar:
     - title: Status
       href: /
