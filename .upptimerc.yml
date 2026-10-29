@@ -4,16 +4,23 @@ repo: librocat-status
 sites:
   - name: librocat.com
     url: https://librocat.com
+    icon: https://status.librocat.com/icon.svg
   - name: Remote MCP (librocat.com/mcp)
     url: https://librocat.com/mcp
     method: POST
+    icon: https://status.librocat.com/icon.svg
     # No token is sent, so a healthy endpoint answers 401.
     expectedStatusCodes:
       - 401
 
 status-website:
   cname: status.librocat.com
-  logoUrl: https://librocat.com/logo.svg
+  # librocat's head mark, its favicon, and its look (assets/, served from
+  # this site so the page keeps them when librocat.com is down).
+  logoUrl: https://status.librocat.com/icon.svg
+  favicon: https://status.librocat.com/apple-icon.png
+  faviconSvg: https://status.librocat.com/icon.svg
+  themeUrl: https://status.librocat.com/librocat.css
   name: librocat status
   introTitle: "**librocat Cloud** status"
   introMessage: Checked by GitHub Actions, usually every few hours. Incidents are the open issues on this repository.
