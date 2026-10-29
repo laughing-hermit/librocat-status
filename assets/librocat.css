@@ -42,12 +42,12 @@
   --graph-opacity: 1;
   --graph-filter: none;
 }
-html,
-body,
-button,
-input,
-select,
-textarea {
+/* After Upptime's global.css, which sets body's font: two elements outrank it. */
+html body,
+html button,
+html input,
+html select,
+html textarea {
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 h1,
