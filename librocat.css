@@ -40,7 +40,14 @@
   --submit-button-background-color: oklch(0.5 0.1 160);
   --submit-button-color: #ffffff;
   --graph-opacity: 1;
-  --graph-filter: none;
+  /* Upptime draws its graphs teal: a turn toward librocat's green. */
+  --graph-filter: hue-rotate(-15deg);
+}
+/* On a phone the graph sits behind the numbers: faint, so they read. */
+@media (max-width: 600px) {
+  :root {
+    --graph-opacity: 0.3;
+  }
 }
 /* After Upptime's global.css, which sets body's font: two elements outrank it. */
 html body,
