@@ -22,7 +22,7 @@ status-website:
   faviconSvg: https://status.librocat.com/icon.svg
   themeUrl: https://status.librocat.com/librocat.css
   name: librocat status
-  introTitle: "**librocat Cloud** status"
+  introTitle: "**librocat** status"
   introMessage: Checked by GitHub Actions, usually every few hours. Incidents are the open issues on this repository.
   navbar:
     - title: Status
